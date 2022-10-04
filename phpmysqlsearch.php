@@ -1,6 +1,6 @@
 <?php    //стартуем, епт
 $query = $_POST['query'];
-$link = mysqli_connect("localhost", "s90297u0_xar0h", "xar0h.KJIbIK", "s90297u0_xar0h"); //серьёзно, вы думали тут будет пароль?
+$link = mysqli_connect("localhost", "s90297u0_xar0h", "mypass", "s90297u0_xar0h"); //серьёзно, вы думали тут будет пароль?
 $sql = "SELECT name, description FROM informationsystem_items WHERE name LIKE '%$query%' OR description LIKE '%$query%' OR text LIKE '%$query%'";
 $query = trim($query);
 $query = mysqli_real_escape_string($link,$query);
